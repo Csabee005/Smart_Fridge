@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon/favicon.ico.svg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css" />
+    <script type="text/javascript" src="method.js"></script>
+</head>
+
+<body id="indexBody">
+    <div class="container-flex">
+        <nav class="navbar navbar-site navbar-fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                    <a class="navbar-brand-icon" href="#"><img id="logoIcon" src="res/svg_images/icon_logo.svg"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Játékosoknak</a></li>
+                        <li class="active"><a href="#">Fejlesztőknek</a></li>
+                        <li><a href="#">Rólunk</a></li>
+                        <li><a href="#">Kapcsolatok</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>Regisztráció</a>
+                                    <form id="registerDropdown" class="dropdown-menu p-4 animate slideIn">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail2">Email cím</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword2">Jelszó</label>
+                                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                            <label class="form-check-label" for="dropdownCheck2">Jegyezz meg</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Regisztráció</button>
+                                  </form>
+                                </li>
+                        <li><a href="species.html"><span class="glyphicon glyphicon-log-in"></span>Belépés</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <video autoplay onclick="pauseButtonFunction()" loop id="myVideo">
+            <source src="res/mp4_videos/video_index.mp4" type="video/mp4">
+            </video>
+        <div class="video-content cssanimation sequence fadeInBottom">
+                <h1>Heroes of Empires</h1>
+                <p>The battle is not yet lost for the horde. Help your fellows rebuild their future, and forget their past.</p>
+                <p>Join them on this epic adventure by D&D.</p>
+                <p>Varok Saurfang realizes that that if he is to secure a future for the Horde, he must reach out to the one who led it in the past.</p>
+                <button class="btn button-accept-default">Játék menete</button>
+                <button class="btn button-accept-default">Hősök</button>
+                <button class="btn button-accept-default">Birodalmak</button>
+        </div>
+    </div>
+    <div class="container-flex">
+            <footer class="footer sticky-bottom">
+                <div class="bottom-bar sticky-bottom text-center">
+                    <pre class="pre">©️ OE-HTML5 2018-19/I    <a href="#">ÁSZF</a>    <a href="#">Adatkezelés</a></pre>  
+                </div>
+            </footer>
+    </div>
+   
+</body>
+
+</html>
+
+<script>
+        window.addEventListener('load', async () => {
+        let video = document.querySelector('video[autoplay]');
+        try {
+            await video.play();
+        } catch (err) {
+            video.muted = true;
+            video.play();   
+        }
+        });
+        // Get the video
+        var video = document.getElementById("myVideo");
+        
+        // Get the button
+        var pauseBtn = document.getElementById("pauseBtn");
+        var muteBtn = document.getElementById("muteBtn");
+        
+        // Pause and play the video, and change the button text
+        function pauseButtonFunction() {
+          if (video.muted) {
+            video.muted = false;
+          } else {
+            video.muted = true;
+          }
+        }
+</script>

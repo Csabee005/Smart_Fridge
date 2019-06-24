@@ -1,0 +1,25 @@
+{
+    "name": "smart_fridge",
+    "version": "1.0.0",
+    "description": "Smart fridge application server",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Csabee005/Smart_Fridge.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Csabee005/Smart_Fridge/issues"
+    },
+    "homepage": "https://github.com/Csabee005/Smart_Fridge#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "eslint": "^6.0.0"
+    }
+}

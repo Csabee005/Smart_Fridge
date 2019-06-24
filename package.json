@@ -18,7 +18,8 @@
     "homepage": "https://github.com/Csabee005/Smart_Fridge#readme",
     "dependencies": {
         "express": "^4.17.1",
-        "faker": "^4.1.0"
+        "faker": "^4.1.0",
+        "mysql": "^2.17.1"
     },
     "devDependencies": {
         "eslint": "^6.0.0"

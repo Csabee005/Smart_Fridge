@@ -1,0 +1,25 @@
+{
+  "name": "smart_fridge",
+  "version": "1.0.0",
+  "description": "smart fridge implementation",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Csabee005/Smart_Fridge.git"
+  },
+  "author": "Csaba Magyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Csabee005/Smart_Fridge/issues"
+  },
+  "homepage": "https://github.com/Csabee005/Smart_Fridge#readme"
+}
